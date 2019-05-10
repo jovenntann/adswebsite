@@ -7,11 +7,15 @@ urlpatterns = [
     # PUBLIC
     url(r'^$',views.index,name='index'),
     url(r'^contact-us/$',views.ContactUs,name='contact-us'),
+    url(r'^checkout/$',views.CheckOut,name='checkout'),
+    url(r'^about-us/$',views.AboutUs,name='about-us'),
+    url(r'^gallery/$',views.Gallery,name='gallery'),
     url(r'^room-list/$',views.RoomList,name='room-list'),
     url(r'^room/$',views.RoomView,name='room-view'),
-    url(r'^checkout/$',views.CheckOut,name='checkout'),
+
     url(r'^room-list/checkin=(?P<checkin>\d{4}-\d{2}-\d{2})&checkout=(?P<checkout>\d{4}-\d{2}-\d{2})/$',views.RoomListSearch,name='room-list-search'), # Live
     url(r'^room/(?P<room_id>.*)/checkin=(?P<checkin>\d{4}-\d{2}-\d{2})&checkout=(?P<checkout>\d{4}-\d{2}-\d{2})/$', views.RoomView,name='room-view'), # Live
+
     
 
     # PORTAL

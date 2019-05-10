@@ -119,7 +119,17 @@ def CheckOut(request):
   }
   return render(request, "adsapp/booking-form.html",context=context)
 
+def AboutUs(request):
+  context = {
+      'activate':'about-us',
+  }
+  return render(request, "adsapp/about-us.html",context=context)
 
+def Gallery(request):
+  context = {
+      'activate':'gallery',
+  }
+  return render(request, "adsapp/gallery.html",context=context)
 
 
 
