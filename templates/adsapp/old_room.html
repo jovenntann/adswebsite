@@ -1,0 +1,34 @@
+<h1>Room Lists</h1>
+
+Check-In: {{ checkin }}</br>
+Check-Out: {{ checkout }}</br></br>
+
+ID: {{ room.id }}</br>
+Room: {{ room.room }}</br>
+Types: {{ room.types }}</br>
+Description: {{ room.description }}</br>
+Bed: {{ room.bed }}</br>
+Bed Quantity{{ room.bed_quantity }}</br>
+Category: {{ room.category }}</br>
+Price: {{ room.price }}</br>
+
+<h1>Amenities</h1>
+
+{% if ammenities_list %} 
+{% for i in ammenities_list %}
+    Name: {{i.amenities.name}}</br>
+    Icon: {{i.amenities.icon}}</br></br>
+{% endfor %}
+{% else %}
+  <p>No Amenities Available</p>
+{% endif %}
+
+<h1>Galleries</h1>
+
+{% if gallery_list %} 
+{% for i in gallery_list %}
+    Link: {{i.link}}</br>
+{% endfor %}
+{% else %}
+  <p>No Gallery Available</p>
+{% endif %}

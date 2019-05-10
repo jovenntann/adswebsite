@@ -1,0 +1,93 @@
+{% extends "adsapp/portal/base.html" %}
+{% load staticfiles %}
+{% block contents %}
+
+  <section class="content-header">
+    <h1>
+      <a href="#" data-toggle="modal" data-target="#modal-recordings" class="btn btn-primary  btn-sm btn-flat">Add Booking</a>
+    </h1>
+  <ol class="breadcrumb">
+      <li><a href="#"><i class="fa fa-calendar"></i> {{ date_from }}</a></li>
+      <li class="active">{{ date_to }} &nbsp;&nbsp;&nbsp; </li> 
+     <a href="#" data-toggle="modal" data-target="#modal-daterange" class="btn btn-primary  btn-sm btn-flat">Search</a>
+  </ol>
+  </section>
+
+
+  <section class="content container-fluid">
+   <div class="box">
+    <div class="box-header">
+      <h3 class="box-title"><b> Bookings </b></h3>
+    </div>
+    <div class="box-body table-responsive">
+
+          <table id="dataTables-example" class="table table-bordered table-hover">
+            <thead>
+            <tr>
+              <th>ID</th>
+              <th>Created</th>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Number</th>
+              <th>Room</th>
+              <th>Check In</th>
+              <th>Check Out</th>
+              <th>Amount</th>
+              <th>Notes</th>
+              <th>Payment Type</th>
+              <th>Payment Status</th>
+            </tr>
+            </thead>
+                <tbody>
+                {% if booking_list %}
+                  {% for i in booking_list %}
+                  <tr class="odd gradeX">
+                        <td>{{ i.id }}</td>
+                        <td>{{ i.created|date:"m-d-Y h:i:s A" }}</td>
+                        <td>{{ i.customer.firstname }} {{ i.customer.lastname }}  </td>
+                        <td>{{ i.customer.email }}</td>
+                        <td>{{ i.customer.number }}</td>
+                        <td>{{ i.room.room }}</td>
+                        <td>{{ i.checkin|date:"m-d-Y" }}</td>
+                        <td>{{ i.checkout|date:"m-d-Y" }}</td>
+                        <td>{{ i.amount }}</td>
+                        <td>{{ i.notes }}</td>
+                        <td>{{ i.payment_type }}</td>
+
+                        {% if i.payment_status == "Paid" %}
+                        <td><font color="green">{{ i.payment_status }}</font></td>   
+                        {% elif i.payment_status == "Unpaid" %}
+                        <td><font color="red">{{ i.payment_status }}</font></td> 
+                        {% endif %}
+                  </tr>
+                  {% endfor %}
+                {% else %}
+                {% endif %}
+                </tbody>
+          </table>
+    </div>
+  </div>
+  </section>
+</div>
+{% endblock %}
+
+
+
+
+
+
+{% block script %}
+<script>
+$(document).ready(function() {
+    $('#dataTables-example').DataTable({
+        responsive: true,
+        "pageLength": 15,
+        "lengthMenu": [ 10, 15, 25, 50, 75, 100 ],
+        "order": [[ 0, "desc" ]]
+    });
+});
+</script>
+{% endblock %}
+
+
+

@@ -1,0 +1,312 @@
+[03/May/2019 23:52:07] "GET /portal/rooms/ HTTP/1.0" 200 18962
+[03/May/2019 23:52:09] "GET /portal/rooms/2/ HTTP/1.0" 200 18391
+[03/May/2019 23:52:14] "GET /portal/bookings/ HTTP/1.0" 200 14652
+[03/May/2019 23:52:15] "GET /portal/rooms/ HTTP/1.0" 200 18962
+[03/May/2019 23:52:24] "GET /portal/rooms/2/ HTTP/1.0" 200 18391
+[03/May/2019 23:57:52] "GET /portal/rooms/ HTTP/1.0" 200 18962
+[03/May/2019 23:58:22] "GET /portal/bookings/ HTTP/1.0" 200 14652
+[03/May/2019 23:58:25] "GET /portal/rooms/ HTTP/1.0" 200 18962
+[04/May/2019 00:11:38] "GET /portal/bookings/ HTTP/1.0" 200 14652
+[04/May/2019 00:13:27] "GET /portal/rooms/ HTTP/1.0" 200 18962
+[04/May/2019 00:13:31] "GET /portal/bookings/ HTTP/1.0" 200 14652
+[04/May/2019 00:17:22] "GET /portal/rooms/ HTTP/1.0" 200 18962
+[04/May/2019 00:17:23] "GET /portal/rooms/ HTTP/1.0" 200 18962
+[04/May/2019 00:17:24] "GET /portal/bookings/ HTTP/1.0" 200 14652
+[04/May/2019 01:12:41] "GET /portal/rooms/ HTTP/1.0" 200 18962
+[2019-05-04 01:12:41,352] - Broken pipe from ('127.0.0.1', 35500)
+
+[04/May/2019 01:12:41] "GET /portal/rooms/ HTTP/1.0" 200 18962
+[04/May/2019 01:15:14] "GET /portal/bookings/ HTTP/1.0" 200 14652
+[04/May/2019 01:15:16] "GET /portal/rooms/ HTTP/1.0" 200 18962
+[04/May/2019 01:25:41] "GET /portal/rooms/ HTTP/1.0" 200 18962
+[04/May/2019 01:25:44] "GET /portal/bookings/ HTTP/1.0" 200 14652
+[04/May/2019 01:25:47] "GET /portal/rooms/ HTTP/1.0" 200 18962
+[04/May/2019 01:25:51] "GET /portal/rooms/2/ HTTP/1.0" 200 18391
+[04/May/2019 01:31:15] "GET /portal/bookings/ HTTP/1.0" 200 14652
+[04/May/2019 01:41:07] "GET / HTTP/1.0" 200 12
+[04/May/2019 01:41:11] "GET /portal/ HTTP/1.0" 302 0
+[04/May/2019 01:41:11] "GET /portal/bookings/ HTTP/1.0" 200 14652
+[04/May/2019 01:41:15] "GET /portal/rooms/ HTTP/1.0" 200 18962
+[04/May/2019 01:41:21] "GET /portal/rooms/13/ HTTP/1.0" 200 18383
+[04/May/2019 01:41:24] "GET /portal/bookings/ HTTP/1.0" 200 14652
+[04/May/2019 01:41:26] "GET /portal/rooms/ HTTP/1.0" 200 18962
+[04/May/2019 06:30:47] "GET / HTTP/1.0" 200 12
+[04/May/2019 06:51:39] "GET / HTTP/1.0" 200 12
+Not Found: /console/login/LoginForm.jsp
+[04/May/2019 06:59:53] "GET /console/login/LoginForm.jsp HTTP/1.0" 404 5606
+[04/May/2019 09:11:04] "GET / HTTP/1.0" 200 12
+Not Found: /console/login/LoginForm.jsp
+[04/May/2019 09:49:44] "GET /console/login/LoginForm.jsp HTTP/1.0" 404 5606
+[04/May/2019 13:16:47] "GET / HTTP/1.0" 200 12
+Not Found: /favicon.ico
+[04/May/2019 13:16:50] "GET /favicon.ico HTTP/1.0" 404 5558
+Not Found: /robots.txt
+[04/May/2019 13:17:11] "GET /robots.txt HTTP/1.0" 404 5555
+Not Found: /sitemap.xml
+[04/May/2019 13:17:13] "GET /sitemap.xml HTTP/1.0" 404 5558
+Not Found: /.well-known/security.txt
+[04/May/2019 13:17:15] "GET /.well-known/security.txt HTTP/1.0" 404 5597
+Not Found: /favicon.ico
+[04/May/2019 13:17:24] "GET /favicon.ico HTTP/1.0" 404 5558
+[04/May/2019 14:41:23] "GET /portal/rooms/ HTTP/1.0" 200 18962
+[04/May/2019 14:41:27] "GET /portal/bookings/ HTTP/1.0" 200 14652
+[04/May/2019 14:41:38] "GET /portal/rooms/ HTTP/1.0" 200 18962
+[04/May/2019 14:44:15] "GET /portal/rooms/ HTTP/1.0" 200 18962
+[04/May/2019 14:44:16] "GET /portal/bookings/ HTTP/1.0" 200 14652
+[04/May/2019 14:44:17] "GET /portal/rooms/ HTTP/1.0" 200 18962
+[04/May/2019 14:46:10] "GET /portal/bookings/ HTTP/1.0" 200 14652
+[04/May/2019 14:46:11] "GET /portal/rooms/ HTTP/1.0" 200 18962
+[04/May/2019 14:46:12] "GET /portal/rooms/1/ HTTP/1.0" 200 18427
+[04/May/2019 14:51:06] "GET /portal/rooms/ HTTP/1.0" 200 18962
+[04/May/2019 14:51:09] "GET /portal/bookings/ HTTP/1.0" 200 14652
+[04/May/2019 15:04:20] "GET / HTTP/1.0" 200 12
+[04/May/2019 15:19:48] "GET /portal/rooms/ HTTP/1.0" 200 18962
+[04/May/2019 16:01:54] "GET / HTTP/1.0" 200 12
+[04/May/2019 17:17:22] "GET / HTTP/1.0" 200 12
+[04/May/2019 17:18:19] "GET / HTTP/1.0" 200 12
+Not Found: /.git/index
+[04/May/2019 19:09:05] "HEAD /.git/index HTTP/1.0" 404 5556
+[04/May/2019 19:23:41] "GET / HTTP/1.0" 200 12
+Not Found: /favicon.ico
+[04/May/2019 19:23:46] "GET /favicon.ico HTTP/1.0" 404 5558
+[04/May/2019 19:23:50] "GET /portal/ HTTP/1.0" 302 0
+[04/May/2019 19:23:50] "GET /portal/bookings/ HTTP/1.0" 200 14652
+[04/May/2019 20:14:14] "GET /portal/rooms/ HTTP/1.0" 200 18962
+[04/May/2019 20:15:01] "GET /portal/bookings/ HTTP/1.0" 200 14652
+[04/May/2019 20:15:03] "GET /portal/rooms/ HTTP/1.0" 200 18962
+[04/May/2019 20:15:13] "GET /portal/bookings/ HTTP/1.0" 200 14652
+[04/May/2019 20:15:14] "GET /portal/bookings/ HTTP/1.0" 200 14652
+[04/May/2019 20:15:15] "GET /portal/rooms/ HTTP/1.0" 200 18962
+[04/May/2019 20:15:20] "GET /portal/bookings/ HTTP/1.0" 200 14652
+[04/May/2019 20:15:48] "GET /portal/rooms/ HTTP/1.0" 200 18962
+[04/May/2019 20:16:03] "GET /portal/bookings/ HTTP/1.0" 200 14652
+[04/May/2019 20:16:22] "GET /portal/rooms/ HTTP/1.0" 200 18962
+[04/May/2019 20:17:54] "GET /portal/bookings/ HTTP/1.0" 200 14652
+[04/May/2019 20:18:00] "GET /portal/rooms/ HTTP/1.0" 200 18962
+[04/May/2019 20:19:03] "GET /portal/rooms/ HTTP/1.0" 200 19049
+[04/May/2019 20:19:33] "GET /portal/rooms/ HTTP/1.0" 200 19049
+[04/May/2019 20:20:31] "GET /portal/rooms/ HTTP/1.0" 200 19053
+[04/May/2019 20:20:37] "GET /portal/rooms/ HTTP/1.0" 200 19049
+[04/May/2019 20:22:25] "GET /portal/rooms/ HTTP/1.0" 200 19049
+[04/May/2019 20:22:28] "GET /portal/bookings/ HTTP/1.0" 200 14739
+[04/May/2019 20:22:30] "GET /portal/rooms/ HTTP/1.0" 200 19049
+[04/May/2019 20:22:50] "GET /portal/bookings/ HTTP/1.0" 200 14739
+[04/May/2019 20:22:53] "GET /portal/rooms/ HTTP/1.0" 200 19049
+[04/May/2019 20:22:54] "GET /portal/bookings/ HTTP/1.0" 200 14739
+[04/May/2019 20:24:40] "GET /portal/rooms/ HTTP/1.0" 200 19049
+[04/May/2019 20:24:42] "GET /portal/bookings/ HTTP/1.0" 200 14739
+[04/May/2019 20:24:46] "GET /portal/rooms/ HTTP/1.0" 200 19049
+[04/May/2019 20:24:54] "GET /portal/rooms/2/ HTTP/1.0" 200 18478
+[04/May/2019 20:25:04] "GET /portal/rooms/6/ HTTP/1.0" 200 18460
+[04/May/2019 20:25:36] "GET /portal/bookings/ HTTP/1.0" 200 14739
+[04/May/2019 20:32:35] "GET /portal/rooms/ HTTP/1.0" 200 19049
+[04/May/2019 20:32:39] "GET /portal/bookings/ HTTP/1.0" 200 14739
+[04/May/2019 20:32:41] "GET /portal/rooms/ HTTP/1.0" 200 19049
+[04/May/2019 20:32:43] "GET /portal/bookings/ HTTP/1.0" 200 14739
+[04/May/2019 20:32:45] "GET /portal/rooms/ HTTP/1.0" 200 19049
+[04/May/2019 20:32:45] "GET /portal/rooms/ HTTP/1.0" 200 19049
+[04/May/2019 20:33:03] "GET /portal/bookings/ HTTP/1.0" 200 14739
+[04/May/2019 20:38:51] "GET /portal/rooms/ HTTP/1.0" 200 19049
+[04/May/2019 20:39:49] "GET /portal/bookings/ HTTP/1.0" 200 14739
+[04/May/2019 20:39:51] "GET /portal/rooms/ HTTP/1.0" 200 19049
+[04/May/2019 20:39:52] "GET /portal/bookings/ HTTP/1.0" 200 14739
+[04/May/2019 20:39:53] "GET /portal/rooms/ HTTP/1.0" 200 19049
+[04/May/2019 20:40:01] "GET /portal/bookings/ HTTP/1.0" 200 14739
+[04/May/2019 20:40:02] "GET /portal/rooms/ HTTP/1.0" 200 19049
+[04/May/2019 20:40:03] "GET /portal/rooms/1/ HTTP/1.0" 200 18514
+[04/May/2019 20:40:15] "GET /admin/ HTTP/1.0" 200 9008
+[04/May/2019 20:40:18] "GET /admin/adsapp/room_gallery/ HTTP/1.0" 200 3090
+[04/May/2019 20:40:18] "GET /admin/jsi18n/ HTTP/1.0" 200 3217
+[04/May/2019 20:40:30] "GET /admin/adsapp/ HTTP/1.0" 200 4709
+[04/May/2019 20:45:27] "GET /portal/rooms/1/ HTTP/1.0" 200 18665
+[04/May/2019 20:45:31] "GET /portal/rooms/ HTTP/1.0" 200 19049
+[04/May/2019 20:45:36] "GET /portal/rooms/7/ HTTP/1.0" 200 18627
+[04/May/2019 20:45:42] "GET /portal/rooms/8/ HTTP/1.0" 200 18596
+[04/May/2019 20:45:46] "GET /portal/rooms/10/ HTTP/1.0" 200 18602
+[04/May/2019 20:46:02] "GET /portal/rooms/10/ HTTP/1.0" 200 18602
+[04/May/2019 20:46:19] "GET /portal/rooms/10/ HTTP/1.0" 200 18621
+[04/May/2019 20:46:21] "GET /portal/rooms/10/ HTTP/1.0" 200 18621
+[04/May/2019 20:47:23] "GET /portal/rooms/10/ HTTP/1.0" 200 0
+[04/May/2019 20:47:24] "GET /portal/rooms/10/ HTTP/1.0" 200 18334
+[04/May/2019 20:47:42] "GET /portal/rooms/10/ HTTP/1.0" 200 18326
+Not Found: /smsblast_group_submit/
+[04/May/2019 20:47:50] "POST /smsblast_group_submit/ HTTP/1.0" 404 5592
+[04/May/2019 20:47:53] "GET /portal/bookings/ HTTP/1.0" 200 14739
+[04/May/2019 20:47:54] "GET /portal/bookings/ HTTP/1.0" 200 14739
+[04/May/2019 20:47:55] "GET /portal/rooms/ HTTP/1.0" 200 19049
+[04/May/2019 20:47:59] "GET /portal/rooms/2/ HTTP/1.0" 200 18356
+[04/May/2019 20:49:54] "GET /portal/rooms/2/ HTTP/1.0" 200 18578
+[04/May/2019 20:50:04] "GET /portal/rooms/2/ HTTP/1.0" 200 18578
+[04/May/2019 20:50:45] "GET /portal/rooms/ HTTP/1.0" 200 19049
+[04/May/2019 20:50:46] "GET /portal/bookings/ HTTP/1.0" 200 14739
+[04/May/2019 20:50:51] "GET /portal/rooms/ HTTP/1.0" 200 19049
+[04/May/2019 20:50:52] "GET /portal/bookings/ HTTP/1.0" 200 14739
+[04/May/2019 20:50:54] "GET /portal/rooms/ HTTP/1.0" 200 19049
+[04/May/2019 20:51:00] "GET /portal/rooms/1/ HTTP/1.0" 200 18610
+[04/May/2019 20:51:15] "GET /portal/rooms/1/ HTTP/1.0" 200 18514
+[04/May/2019 20:51:29] "GET /portal/rooms/1/ HTTP/1.0" 200 18610
+[04/May/2019 20:51:34] "GET /portal/rooms/1/ HTTP/1.0" 200 18589
+[04/May/2019 20:51:40] "GET /portal/rooms/1/ HTTP/1.0" 200 18617
+[04/May/2019 20:51:43] "GET /portal/rooms/1/ HTTP/1.0" 200 18617
+[04/May/2019 20:51:47] "GET /portal/rooms/1/ HTTP/1.0" 200 18617
+[04/May/2019 20:52:00] "GET /portal/rooms/1/ HTTP/1.0" 200 18617
+[04/May/2019 20:52:02] "GET /portal/rooms/ HTTP/1.0" 200 19049
+[04/May/2019 20:52:10] "GET /portal/rooms/9/ HTTP/1.0" 200 18564
+[04/May/2019 20:53:17] "GET /portal/rooms/9/ HTTP/1.0" 200 18955
+[04/May/2019 20:53:38] "GET /portal/rooms/9/ HTTP/1.0" 200 18808
+[04/May/2019 20:54:03] "GET /portal/bookings/ HTTP/1.0" 200 14739
+[04/May/2019 20:54:16] "GET /admin/ HTTP/1.0" 200 9008
+[04/May/2019 20:54:16] "GET /admin/ HTTP/1.0" 200 9008
+[04/May/2019 20:54:18] "GET /admin/ipn/paypalipn/ HTTP/1.0" 200 4024
+[04/May/2019 20:54:18] "GET /admin/jsi18n/ HTTP/1.0" 200 3217
+[04/May/2019 20:54:20] "GET /admin/ipn/ HTTP/1.0" 200 2196
+[04/May/2019 20:54:22] "GET /admin/ HTTP/1.0" 200 9008
+[04/May/2019 20:54:26] "GET /portal/rooms/ HTTP/1.0" 200 19049
+[04/May/2019 20:58:24] "GET /portal/bookings/ HTTP/1.0" 200 14739
+[04/May/2019 20:59:31] "GET /portal/bookings/ HTTP/1.0" 200 14739
+[04/May/2019 20:59:32] "GET /portal/rooms/ HTTP/1.0" 200 19049
+[04/May/2019 20:59:44] "GET /portal/bookings/ HTTP/1.0" 200 14739
+[04/May/2019 20:59:45] "GET /portal/rooms/ HTTP/1.0" 200 19049
+[04/May/2019 20:59:48] "GET /portal/rooms/1/ HTTP/1.0" 200 18861
+[04/May/2019 20:59:55] "GET /portal/bookings/ HTTP/1.0" 200 14739
+[04/May/2019 20:59:56] "GET /portal/rooms/ HTTP/1.0" 200 19049
+[04/May/2019 21:00:57] "GET /portal/rooms/ HTTP/1.0" 200 20012
+Internal Server Error: /portal/rooms/availabilty/1/
+Traceback (most recent call last):
+  File "/usr/lib64/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/lib64/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/lib64/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/lib64/python2.7/site-packages/django/contrib/auth/decorators.py", line 23, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/opt/amihandelsol/adsapp/views.py", line 222, in RoomDetails
+    RoomDetails = Room.objects.get(id=room_id)
+  File "/usr/lib64/python2.7/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/lib64/python2.7/site-packages/django/db/models/query.py", line 371, in get
+    clone = self.filter(*args, **kwargs)
+  File "/usr/lib64/python2.7/site-packages/django/db/models/query.py", line 787, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/usr/lib64/python2.7/site-packages/django/db/models/query.py", line 805, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/usr/lib64/python2.7/site-packages/django/db/models/sql/query.py", line 1250, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/usr/lib64/python2.7/site-packages/django/db/models/sql/query.py", line 1276, in _add_q
+    allow_joins=allow_joins, split_subq=split_subq,
+  File "/usr/lib64/python2.7/site-packages/django/db/models/sql/query.py", line 1210, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/usr/lib64/python2.7/site-packages/django/db/models/sql/query.py", line 1104, in build_lookup
+    return final_lookup(lhs, rhs)
+  File "/usr/lib64/python2.7/site-packages/django/db/models/lookups.py", line 24, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "/usr/lib64/python2.7/site-packages/django/db/models/lookups.py", line 74, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+  File "/usr/lib64/python2.7/site-packages/django/db/models/fields/__init__.py", line 966, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: 'availabilty/1'
+[04/May/2019 21:01:18] "GET /portal/rooms/availabilty/1/ HTTP/1.0" 500 125405
+[04/May/2019 21:01:26] "GET /portal/rooms/1/ HTTP/1.0" 200 18861
+[04/May/2019 21:01:26] "GET /portal/rooms/1/ HTTP/1.0" 200 18861
+[04/May/2019 21:01:31] "GET /portal/bookings/ HTTP/1.0" 200 14739
+[04/May/2019 21:01:34] "GET /portal/rooms/ HTTP/1.0" 200 20012
+Internal Server Error: /portal/rooms/availabilty/1/
+Traceback (most recent call last):
+  File "/usr/lib64/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/lib64/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/lib64/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/lib64/python2.7/site-packages/django/contrib/auth/decorators.py", line 23, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/opt/amihandelsol/adsapp/views.py", line 222, in RoomDetails
+    RoomDetails = Room.objects.get(id=room_id)
+  File "/usr/lib64/python2.7/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/lib64/python2.7/site-packages/django/db/models/query.py", line 371, in get
+    clone = self.filter(*args, **kwargs)
+  File "/usr/lib64/python2.7/site-packages/django/db/models/query.py", line 787, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/usr/lib64/python2.7/site-packages/django/db/models/query.py", line 805, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/usr/lib64/python2.7/site-packages/django/db/models/sql/query.py", line 1250, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/usr/lib64/python2.7/site-packages/django/db/models/sql/query.py", line 1276, in _add_q
+    allow_joins=allow_joins, split_subq=split_subq,
+  File "/usr/lib64/python2.7/site-packages/django/db/models/sql/query.py", line 1210, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/usr/lib64/python2.7/site-packages/django/db/models/sql/query.py", line 1104, in build_lookup
+    return final_lookup(lhs, rhs)
+  File "/usr/lib64/python2.7/site-packages/django/db/models/lookups.py", line 24, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "/usr/lib64/python2.7/site-packages/django/db/models/lookups.py", line 74, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+  File "/usr/lib64/python2.7/site-packages/django/db/models/fields/__init__.py", line 966, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: 'availabilty/1'
+[04/May/2019 21:01:36] "GET /portal/rooms/availabilty/1/ HTTP/1.0" 500 125405
+[04/May/2019 21:01:39] "GET /portal/bookings/ HTTP/1.0" 200 14739
+[04/May/2019 21:14:43] "GET /admin/ HTTP/1.0" 200 9008
+[04/May/2019 21:16:00] "GET /portal/bookings/ HTTP/1.0" 200 14739
+[04/May/2019 21:16:01] "GET /portal/rooms/ HTTP/1.0" 200 20012
+[04/May/2019 22:11:59] "GET / HTTP/1.0" 200 12
+Not Found: /admin//config.php
+[05/May/2019 00:01:02] "GET /admin//config.php HTTP/1.0" 404 8721
+[05/May/2019 10:03:00] "GET / HTTP/1.0" 200 12
+Performing system checks...
+
+System check identified no issues (0 silenced).
+May 03, 2019 - 23:52:02
+Django version 1.11.20, using settings 'amihandelsol.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Unhandled exception in thread started by <function wrapper at 0x7fc4f24ec8c0>
+Traceback (most recent call last):
+  File "/usr/lib64/python2.7/site-packages/django/utils/autoreload.py", line 228, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/lib64/python2.7/site-packages/django/core/management/commands/runserver.py", line 116, in inner_run
+    autoreload.raise_last_exception()
+  File "/usr/lib64/python2.7/site-packages/django/utils/autoreload.py", line 251, in raise_last_exception
+    six.reraise(*_exception)
+  File "/usr/lib64/python2.7/site-packages/django/utils/autoreload.py", line 228, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/lib64/python2.7/site-packages/django/__init__.py", line 27, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/usr/lib64/python2.7/site-packages/django/apps/registry.py", line 85, in populate
+    app_config = AppConfig.create(entry)
+  File "/usr/lib64/python2.7/site-packages/django/apps/config.py", line 120, in create
+    mod = import_module(mod_path)
+  File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/usr/lib/python2.7/site-packages/channels/apps.py", line 6, in <module>
+    import daphne.server  # noqa
+  File "/usr/lib/python2.7/site-packages/daphne/server.py", line 213
+    async def handle_reply(self, protocol, message):
+            ^
+SyntaxError: invalid syntax
+Unhandled exception in thread started by <function wrapper at 0x7f07143b48c0>
+Traceback (most recent call last):
+  File "/usr/lib64/python2.7/site-packages/django/utils/autoreload.py", line 228, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/lib64/python2.7/site-packages/django/core/management/commands/runserver.py", line 116, in inner_run
+    autoreload.raise_last_exception()
+  File "/usr/lib64/python2.7/site-packages/django/utils/autoreload.py", line 251, in raise_last_exception
+    six.reraise(*_exception)
+  File "/usr/lib64/python2.7/site-packages/django/utils/autoreload.py", line 228, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/lib64/python2.7/site-packages/django/__init__.py", line 27, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/usr/lib64/python2.7/site-packages/django/apps/registry.py", line 85, in populate
+    app_config = AppConfig.create(entry)
+  File "/usr/lib64/python2.7/site-packages/django/apps/config.py", line 120, in create
+    mod = import_module(mod_path)
+  File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/usr/lib/python2.7/site-packages/channels/apps.py", line 6, in <module>
+    import daphne.server  # noqa
+  File "/usr/lib/python2.7/site-packages/daphne/server.py", line 213
+    async def handle_reply(self, protocol, message):
+            ^
+SyntaxError: invalid syntax

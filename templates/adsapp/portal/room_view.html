@@ -1,0 +1,120 @@
+{% extends "adsapp/portal/base.html" %}
+{% load staticfiles %}
+{% block contents %}
+
+<section class="content-header">
+    <h1>
+      <small>Room Details</small>
+    </h1>
+  <ol class="breadcrumb">
+      <li><a href="#"><i class="fa fa-calendar"></i> {{ date_from }}</a></li>
+      <li class="active">{{ date_to }} &nbsp;&nbsp;&nbsp; </li> 
+      <a href="#" data-toggle="modal" data-target="#modal-daterange" class="btn btn-primary  btn-sm btn-flat">Search</a>
+  </ol>
+</section>
+  <div class="row">
+      <div class="col-md-6">
+        <section class="content container-fluid">
+          <div class="box">
+
+              <div class="box-header"><h3 class="box-title"><b> Room Details </b></h3></div>
+              <div class="box-body table-responsive">
+
+                    <form role="form" method="post" action="/smsblast_group_submit/" enctype="multipart/form-data"> {% csrf_token %}
+
+                      <div class="box-body">
+
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Room</label>
+                            <input type="text" class="form-control" name="room" id="InputName" placeholder="" maxlength="20" value="{{ RoomDetails.room }}">
+                        </div>
+
+                        <div class="form-group">
+                          <label>Types</label>
+                          <select class="form-control">
+                            <option {% if RoomDetails.types == 'Couple' %}selected="selected"{% endif %}>Couple</option>
+                            <option {% if RoomDetails.types == 'Family' %}selected="selected"{% endif %}>Family</option>
+                          </select>
+                        </div>
+
+                        <div class="form-group">
+                          <label>Bed</label>
+                          <select class="form-control">
+                            <option {% if RoomDetails.bed == 'Double' %}selected="selected"{% endif %}>Double</option>
+                            <option {% if RoomDetails.bed == 'Double & Single' %}selected="selected"{% endif %}>Double & Single</option>
+                            <option {% if RoomDetails.bed == 'Queen' %}selected="selected"{% endif %}>Queen</option>
+                            <option {% if RoomDetails.bed == 'Queen (54 Inch)' %}selected="selected"{% endif %}>Queen (54 Inch)</option>
+                            <option {% if RoomDetails.bed == 'King' %}selected="selected"{% endif %}>King</option>
+                          </select>
+                        </div>
+
+                        <div class="form-group">
+                          <label for="exampleInputEmail1">Bed Quantity</label>
+                          <input type="text" class="form-control" name="room" id="InputName" placeholder="" maxlength="20" value="{{ RoomDetails.bed_quantity }}">
+                        </div>  
+
+                        <div class="form-group">
+                          <label>Category</label>
+                          <select class="form-control">
+                            <option {% if RoomDetails.category == 'Double-Double' %}selected="selected"{% endif %}>Double-Double</option>
+                            <option {% if RoomDetails.category == 'Queen Room' %}selected="selected"{% endif %}>Queen Room</option>
+                            <option {% if RoomDetails.category == 'Premium Room' %}selected="selected"{% endif %}>Premium Room</option>
+                            <option {% if RoomDetails.category == 'Twin Room' %}selected="selected"{% endif %}>Twin Room</option>
+                          </select>
+                        </div>
+
+                        <div class="form-group">
+                          <label for="exampleInputEmail1">Price</label>
+                          <input type="text" class="form-control" name="room" id="InputName" placeholder="" maxlength="20" value="{{ RoomDetails.price }}">
+                        </div>  
+
+                        <div class="form-group">
+                          <label>Amenities</label>
+                          <select class="form-control select2" id="groups" multiple="multiple" data-placeholder="Select Amenities" name="amenities[]" style="width: 100%;">
+                            {% if amenities_list %}
+                            {% for i in amenities_list %}
+                                <option value="{{ i.id }}">{{ i.name }}</option>
+                            {% endfor %}
+                            {% else %}
+                                <p>No Data</p>
+                            {% endif %}
+                          </select>
+                        </div>
+        
+                        <div class="form-group">
+                          <label></br>Descrption:</label>
+                          <textarea class="form-control" rows="5" name="message" placeholder="Enter Message ..." >{{ RoomDetails.description }}</textarea>
+                        </div>
+        
+                      </div> <!--Div Box-Body-->
+
+                      <div class="box-footer">
+                        <button type="submit" class="btn btn-primary" onclick="$getgroups">Submit</button>
+                      </div>
+                    </form>
+        
+              </div> <!--Div Box-Body-->
+          </div> <!--Div Box-->
+        </section> <!--Section-->
+      </div> <!--Col-md-6-->
+  </div> <!-- Row -->
+</div>
+{% endblock %}
+
+{% block script %}
+<script>
+    var s2 = $("#groups").select2({
+      placeholder: "Select Amenities",
+      tags: true
+  });
+  
+  var vals = [{% if RoomAmenities %}{% for i in RoomAmenities %}"{{ i.amenities.name }}",{% endfor %}{% else %}{% endif %}];
+  
+  vals.forEach(function(e){
+  if(!s2.find('option:contains(' + e + ')').length) 
+    s2.append($('<option>').text(e));
+  });
+  
+  s2.val(vals).trigger("change"); 
+</script>
+{% endblock %}

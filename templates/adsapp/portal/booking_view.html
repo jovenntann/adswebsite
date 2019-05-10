@@ -1,0 +1,68 @@
+{% extends "adsapp/portal/base.html" %}
+{% load staticfiles %}
+{% block contents %}
+ 
+    <section class="content-header">
+        <h1>
+          <small>Room Details</small>
+        </h1>
+      <ol class="breadcrumb">
+          <li><a href="#"><i class="fa fa-calendar"></i> {{ date_from }}</a></li>
+          <li class="active">{{ date_to }} &nbsp;&nbsp;&nbsp; </li> 
+         <a href="#" data-toggle="modal" data-target="#modal-daterange" class="btn btn-primary  btn-sm btn-flat">Search</a>
+      </ol>
+    </section>
+    
+    
+    <div class="col-md-6">
+    
+    
+        <section class="content container-fluid">
+
+            <div class="box">
+
+                <div class="box-header"><h3 class="box-title"><b> Room Details </b></h3></div>
+                <div class="box-body table-responsive">
+
+                <form role="form" method="post" action="/smsblast_group_submit/" enctype="multipart/form-data"> {% csrf_token %}
+                  <div class="box-body">
+
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">Tag</label>
+                      <input type="text" class="form-control" name="tag" id="InputName" placeholder="Enter Tag Name" maxlength="20">
+                    </div>
+
+                    <div class="form-group">
+                      <label>Contacts Group</label>
+                      <select class="form-control select2" id="groups" multiple="multiple" data-placeholder="Select a Group" name="groups[]" style="width: 100%;">
+                        {% if amenities_list %} <!-- If Access Recrords exist in views.py -->
+                        {% for i in amenities_list %}
+                            <option>{{ i }}</option>
+                        {% endfor %}
+                        {% else %}
+                            <p>No Data</p>
+                        {% endif %}
+                      </select>
+                    </div>
+    
+                    <div class="form-group">
+                      <label></br>Message:</label>
+                      <textarea class="form-control" rows="5" name="message" placeholder="Enter Message ..."></textarea>
+                    </div>
+    
+                  </div>
+    
+
+                  <div class="box-footer">
+                    <button type="submit" class="btn btn-primary" onclick="$getgroups">Submit</button>
+                  </div>
+                </form>
+    
+                </div>
+            </div>
+        </section>
+    
+      </div>
+
+</div>
+{% endblock %}

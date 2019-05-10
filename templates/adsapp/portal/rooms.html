@@ -1,0 +1,82 @@
+{% extends "adsapp/portal/base.html" %}
+{% load staticfiles %}
+{% block contents %}
+
+  <section class="content-header">
+    <h1>
+      <a href="#" data-toggle="modal" data-target="#modal-recordings" class="btn btn-primary  btn-sm btn-flat">Add Room</a>
+    </h1>
+  <ol class="breadcrumb">
+      <li><a href="#"><i class="fa fa-calendar"></i> {{ date_from }}</a></li>
+      <li class="active">{{ date_to }} &nbsp;&nbsp;&nbsp; </li> 
+     <a href="#" data-toggle="modal" data-target="#modal-daterange" class="btn btn-primary  btn-sm btn-flat">Search</a>
+  </ol>
+  </section>
+
+
+  <section class="content container-fluid">
+   <div class="box">
+    <div class="box-header">
+      <h3 class="box-title"><b> Rooms </b></h3>
+    </div>
+    <div class="box-body table-responsive">
+
+          <table id="dataTables-example" class="table table-bordered table-hover">
+            <thead>
+            <tr>
+              <th>ID</th>
+              <th>Room</th>
+              <th>Types</th>
+              <th>Description</th>
+              <th>Bed</th>
+              <th>Bed Quantity</th>
+              <th>Category</th>
+              <th>Price</th>
+              <th>Availability</th>
+            </tr>
+            </thead>
+                <tbody>
+                {% if room_list %}
+                  {% for i in room_list %}
+                  <tr class="odd gradeX">
+                        <td><a href="{{ i.id }}/">{{ i.id }}</td>
+                        <td>{{ i.room }}</td>
+                        <td>{{ i.types }}  </td>
+                        <td>{{ i.description }}</td>
+                        <td>{{ i.bed }}</td>
+                        <td>{{ i.bed_quantity }}</td>
+                        <td>{{ i.category }}</td>
+                        <td>{{ i.price }}</td>
+                        <td><a href="availabilty/{{ i.id }}/">Availability</td>
+                  </tr>
+                  {% endfor %}
+                {% else %}
+                {% endif %}
+                </tbody>
+          </table>
+    </div>
+  </div>
+  </section>
+</div>
+{% endblock %}
+
+
+
+
+
+
+{% block script %}
+<script>
+$(document).ready(function() {
+    $('#dataTables-example').DataTable({
+        responsive: true,
+        "pageLength": 15,
+        "lengthMenu": [ 10, 15, 25, 50, 75, 100 ],
+        "order": [[ 0, "asc" ]]
+    });
+});
+</script>
+{% endblock %}
+
+
+
