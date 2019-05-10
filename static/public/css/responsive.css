@@ -7,7 +7,7 @@
 /* Medium devices (tablets, 768px and up) */
 
 @media (min-width: 768px) {
- 
+
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -378,6 +378,22 @@
   .shop-details .shop-item-details {
     padding-top: 30px;
   }
+
+  .section-title h4 .left-deco, .section-title h4 .right-deco{
+    display: none;
+  }
+  .section-title p{
+    margin-bottom: 0;
+  }
+
+  .section-title {
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+    background-size: contain;
+}
+
+
+
 }
 
 /* Extra small devices (portrait phones, less than 576px) */

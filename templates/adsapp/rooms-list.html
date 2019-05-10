@@ -2,14 +2,13 @@
 {% load staticfiles %}
 {% block contents %}
 
-        <div class="page-title gradient-overlay op6" style="background: url(images/breadcrumb.jpg); background-repeat: no-repeat;
-    background-size: cover;">
+        <div class="page-title gradient-overlay op6">
             <div class="container">
                 <div class="inner">
                     <h1>ROOMS</h1>
                     <ol class="breadcrumb">
                         <li>
-                            <a href="index.html">Home</a>
+                            <a href="/">Home</a>
                         </li>
                         <li>Rooms</li>
                     </ol>
@@ -24,14 +23,14 @@
                     <div class="row">
                         <div class="col-lg-4">
                             <figure class="gradient-overlay-hover link-icon">
-                                <a href="room.html"><img src="images/rooms/single/single1.jpg" class="img-fluid"
+                                <a href="/room/"><img src="{% static "/public/images/rooms/single/single1.jpg" %}" class="img-fluid"
                                         alt="Image"></a>
                             </figure>
                         </div>
                         <div class="col-lg-6">
                             <div class="room-info">
                                 <h3 class="room-title">
-                                    <a href="room.html">SINGLE ROOM</a>
+                                    <a href="/room/">SINGLE ROOM</a>
                                 </h3>
                                 <span class="room-rates">
                                     <i class="fa fa-star" aria-hidden="true"></i>
@@ -39,7 +38,7 @@
                                     <i class="fa fa-star" aria-hidden="true"></i>
                                     <i class="fa fa-star" aria-hidden="true"></i>
                                     <i class="fa fa-star" aria-hidden="true"></i>
-                                    <a href="room.html#room-reviews">5.00 Based on 3 Ratings</a>
+                                    <a href="/room/#room-reviews">5.00 Based on 3 Ratings</a>
                                 </span>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus animi quod
                                     adipisci quia? Laudantium quibusdam, mollitia nisi quasi perspiciatis omnis...</p>
@@ -60,7 +59,7 @@
                         <div class="col-lg-2">
                             <div class="room-price">
                                 <span class="price">€89 / night</span>
-                                <a href="booking-form.html" class="btn btn-sm">BOOK NOW</a>
+                                <a href="/checkout/" class="btn btn-sm">BOOK NOW</a>
                             </div>
                         </div>
                     </div>
@@ -73,14 +72,14 @@
                     <div class="row">
                         <div class="col-lg-4">
                             <figure class="gradient-overlay-hover link-icon">
-                                <a href="room.html"><img src="images/rooms/double/double.jpg" class="img-fluid"
+                                <a href="/room/"><img src="{% static "/public/images/rooms/double/double.jpg" %}" class="img-fluid"
                                         alt="Image"></a>
                             </figure>
                         </div>
                         <div class="col-lg-6">
                             <div class="room-info">
                                 <h3 class="room-title">
-                                    <a href="room.html">DOUBLE ROOM</a>
+                                    <a href="/room/">DOUBLE ROOM</a>
                                 </h3>
                                 <span class="room-rates">
                                     <i class="fa fa-star" aria-hidden="true"></i>
@@ -88,7 +87,7 @@
                                     <i class="fa fa-star" aria-hidden="true"></i>
                                     <i class="fa fa-star" aria-hidden="true"></i>
                                     <i class="fa fa-star" aria-hidden="true"></i>
-                                    <a href="room.html#room-reviews">5.00 Based on 3 Ratings</a>
+                                    <a href="/room/#room-reviews">5.00 Based on 3 Ratings</a>
                                 </span>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus animi quod
                                     adipisci quia? Laudantium quibusdam, mollitia nisi quasi perspiciatis omnis...</p>
@@ -109,7 +108,7 @@
                         <div class="col-lg-2">
                             <div class="room-price">
                                 <span class="price">€129 / night</span>
-                                <a href="booking-form.html" class="btn btn-sm">BOOK NOW</a>
+                                <a href="/checkout/" class="btn btn-sm">BOOK NOW</a>
                             </div>
                         </div>
                     </div>
@@ -119,14 +118,14 @@
                     <div class="row">
                         <div class="col-lg-4">
                             <figure class="gradient-overlay-hover link-icon">
-                                <a href="room.html"><img src="images/rooms/deluxe/deluxe.jpg" class="img-fluid"
+                                <a href="/room/"><img src="{% static "/public/images/rooms/deluxe/deluxe.jpg" %}" class="img-fluid"
                                         alt="Image"></a>
                             </figure>
                         </div>
                         <div class="col-lg-6">
                             <div class="room-info">
                                 <h3 class="room-title">
-                                    <a href="room.html">DELUXE ROOM</a>
+                                    <a href="/room/">DELUXE ROOM</a>
                                 </h3>
                                 <span class="room-rates">
                                     <i class="fa fa-star" aria-hidden="true"></i>
@@ -134,7 +133,7 @@
                                     <i class="fa fa-star" aria-hidden="true"></i>
                                     <i class="fa fa-star" aria-hidden="true"></i>
                                     <i class="fa fa-star" aria-hidden="true"></i>
-                                    <a href="room.html#room-reviews">5.00 Based on 3 Ratings</a>
+                                    <a href="/room/#room-reviews">5.00 Based on 3 Ratings</a>
                                 </span>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus animi quod
                                     adipisci quia? Laudantium quibusdam, mollitia nisi quasi perspiciatis omnis...</p>
@@ -155,7 +154,7 @@
                         <div class="col-lg-2">
                             <div class="room-price">
                                 <span class="price">€189 / night</span>
-                                <a href="booking-form.html" class="btn btn-sm">BOOK NOW</a>
+                                <a href="/checkout/" class="btn btn-sm">BOOK NOW</a>
                             </div>
                         </div>
                     </div>
@@ -165,14 +164,14 @@
                     <div class="row">
                         <div class="col-lg-4">
                             <figure class="gradient-overlay-hover link-icon">
-                                <a href="room.html"><img src="images/rooms/family/family.jpg" class="img-fluid"
+                                <a href="/room/"><img src="{% static "/public/images/rooms/family/family.jpg" %}" class="img-fluid"
                                         alt="Image"></a>
                             </figure>
                         </div>
                         <div class="col-lg-6">
                             <div class="room-info">
                                 <h3 class="room-title">
-                                    <a href="room.html">FAMILY ROOM</a>
+                                    <a href="/room/">FAMILY ROOM</a>
                                 </h3>
                                 <span class="room-rates">
                                     <i class="fa fa-star" aria-hidden="true"></i>
@@ -180,7 +179,7 @@
                                     <i class="fa fa-star" aria-hidden="true"></i>
                                     <i class="fa fa-star" aria-hidden="true"></i>
                                     <i class="fa fa-star" aria-hidden="true"></i>
-                                    <a href="room.html#room-reviews">5.00 Based on 3 Ratings</a>
+                                    <a href="/room/#room-reviews">5.00 Based on 3 Ratings</a>
                                 </span>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus animi quod
                                     adipisci quia? Laudantium quibusdam, mollitia nisi quasi perspiciatis omnis...</p>
@@ -201,7 +200,7 @@
                         <div class="col-lg-2">
                             <div class="room-price">
                                 <span class="price">€149 / night</span>
-                                <a href="booking-form.html" class="btn btn-sm">BOOK NOW</a>
+                                <a href="/checkout/" class="btn btn-sm">BOOK NOW</a>
                             </div>
                         </div>
                     </div>
@@ -211,14 +210,14 @@
                     <div class="row">
                         <div class="col-lg-4">
                             <figure class="gradient-overlay-hover link-icon">
-                                <a href="room.html"><img src="images/rooms/king/king.jpg" class="img-fluid"
+                                <a href="/room/"><img src="{% static "/public/images/rooms/king/king.jpg" %}" class="img-fluid"
                                         alt="Image"></a>
                             </figure>
                         </div>
                         <div class="col-lg-6">
                             <div class="room-info">
                                 <h3 class="room-title">
-                                    <a href="room.html">KING ROOM</a>
+                                    <a href="/room/">KING ROOM</a>
                                 </h3>
                                 <span class="room-rates">
                                     <i class="fa fa-star" aria-hidden="true"></i>
@@ -226,7 +225,7 @@
                                     <i class="fa fa-star" aria-hidden="true"></i>
                                     <i class="fa fa-star" aria-hidden="true"></i>
                                     <i class="fa fa-star" aria-hidden="true"></i>
-                                    <a href="room.html#room-reviews">5.00 Based on 3 Ratings</a>
+                                    <a href="/room/#room-reviews">5.00 Based on 3 Ratings</a>
                                 </span>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus animi quod
                                     adipisci quia? Laudantium quibusdam, mollitia nisi quasi perspiciatis omnis...</p>
@@ -250,7 +249,7 @@
                         <div class="col-lg-2">
                             <div class="room-price">
                                 <span class="price">€289 / night</span>
-                                <a href="booking-form.html" class="btn btn-sm">BOOK NOW</a>
+                                <a href="/checkout/" class="btn btn-sm">BOOK NOW</a>
                             </div>
                         </div>
                     </div>
@@ -263,14 +262,14 @@
                     <div class="row">
                         <div class="col-lg-4">
                             <figure class="gradient-overlay-hover link-icon">
-                                <a href="room.html"><img src="images/rooms/honeymoon/honeymoon.jpg" class="img-fluid"
+                                <a href="/room/"><img src="{% static "/public/images/rooms/honeymoon/honeymoon.jpg" %}" class="img-fluid"
                                         alt="Image"></a>
                             </figure>
                         </div>
                         <div class="col-lg-6">
                             <div class="room-info">
                                 <h3 class="room-title">
-                                    <a href="room.html">HONEYMOON ROOM</a>
+                                    <a href="/room/">HONEYMOON ROOM</a>
                                 </h3>
                                 <span class="room-rates">
                                     <i class="fa fa-star" aria-hidden="true"></i>
@@ -278,7 +277,7 @@
                                     <i class="fa fa-star" aria-hidden="true"></i>
                                     <i class="fa fa-star" aria-hidden="true"></i>
                                     <i class="fa fa-star" aria-hidden="true"></i>
-                                    <a href="room.html#room-reviews">5.00 Based on 3 Ratings</a>
+                                    <a href="/room/#room-reviews">5.00 Based on 3 Ratings</a>
                                 </span>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus animi quod
                                     adipisci quia? Laudantium quibusdam, mollitia nisi quasi perspiciatis omnis...</p>
@@ -299,7 +298,7 @@
                         <div class="col-lg-2">
                             <div class="room-price">
                                 <span class="price">€169 / night</span>
-                                <a href="booking-form.html" class="btn btn-sm">BOOK NOW</a>
+                                <a href="/checkout/" class="btn btn-sm">BOOK NOW</a>
                             </div>
                         </div>
                     </div>
@@ -309,14 +308,14 @@
                     <div class="row">
                         <div class="col-lg-4">
                             <figure class="gradient-overlay-hover link-icon">
-                                <a href="room.html"><img src="images/rooms/view/view.jpg" class="img-fluid"
+                                <a href="/room/"><img src="{% static "/public/images/rooms/view/view.jpg" %}" class="img-fluid"
                                         alt="Image"></a>
                             </figure>
                         </div>
                         <div class="col-lg-6">
                             <div class="room-info">
                                 <h3 class="room-title">
-                                    <a href="room.html">ROOM WITH VIEW</a>
+                                    <a href="/room/">ROOM WITH VIEW</a>
                                 </h3>
                                 <span class="room-rates">
                                     <i class="fa fa-star" aria-hidden="true"></i>
@@ -324,7 +323,7 @@
                                     <i class="fa fa-star" aria-hidden="true"></i>
                                     <i class="fa fa-star" aria-hidden="true"></i>
                                     <i class="fa fa-star" aria-hidden="true"></i>
-                                    <a href="room.html#room-reviews">5.00 Based on 3 Ratings</a>
+                                    <a href="/room/#room-reviews">5.00 Based on 3 Ratings</a>
                                 </span>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus animi quod
                                     adipisci quia? Laudantium quibusdam, mollitia nisi quasi perspiciatis omnis...</p>
@@ -345,7 +344,7 @@
                         <div class="col-lg-2">
                             <div class="room-price">
                                 <span class="price">€119 / night</span>
-                                <a href="booking-form.html" class="btn btn-sm">BOOK NOW</a>
+                                <a href="/checkout/" class="btn btn-sm">BOOK NOW</a>
                             </div>
                         </div>
                     </div>
@@ -355,14 +354,14 @@
                     <div class="row">
                         <div class="col-lg-4">
                             <figure class="gradient-overlay-hover link-icon">
-                                <a href="room.html"><img src="images/rooms/luxury/luxury.jpg" class="img-fluid"
+                                <a href="/room/"><img src="{% static "/public/images/rooms/luxury/luxury.jpg" %}" class="img-fluid"
                                         alt="Image"></a>
                             </figure>
                         </div>
                         <div class="col-lg-6">
                             <div class="room-info">
                                 <h3 class="room-title">
-                                    <a href="room.html">LUXURY ROOM</a>
+                                    <a href="/room/">LUXURY ROOM</a>
                                 </h3>
                                 <span class="room-rates">
                                     <i class="fa fa-star" aria-hidden="true"></i>
@@ -370,7 +369,7 @@
                                     <i class="fa fa-star" aria-hidden="true"></i>
                                     <i class="fa fa-star" aria-hidden="true"></i>
                                     <i class="fa fa-star" aria-hidden="true"></i>
-                                    <a href="room.html#room-reviews">5.00 Based on 3 Ratings</a>
+                                    <a href="/room/#room-reviews">5.00 Based on 3 Ratings</a>
                                 </span>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus animi quod
                                     adipisci quia? Laudantium quibusdam, mollitia nisi quasi perspiciatis omnis...</p>
@@ -391,7 +390,7 @@
                         <div class="col-lg-2">
                             <div class="room-price">
                                 <span class="price">€349 / night</span>
-                                <a href="booking-form.html" class="btn btn-sm">BOOK NOW</a>
+                                <a href="/checkout/" class="btn btn-sm">BOOK NOW</a>
                             </div>
                         </div>
                     </div>
@@ -401,14 +400,14 @@
                     <div class="row">
                         <div class="col-lg-4">
                             <figure class="gradient-overlay-hover link-icon">
-                                <a href="room.html"><img src="images/rooms/small/small.jpg" class="img-fluid"
+                                <a href="/room/"><img src="{% static "/public/images/rooms/small/small.jpg" %}" class="img-fluid"
                                         alt="Image"></a>
                             </figure>
                         </div>
                         <div class="col-lg-6">
                             <div class="room-info">
                                 <h3 class="room-title">
-                                    <a href="room.html">SMALL ROOM</a>
+                                    <a href="/room/">SMALL ROOM</a>
                                 </h3>
                                 <span class="room-rates">
                                     <i class="fa fa-star" aria-hidden="true"></i>
@@ -416,7 +415,7 @@
                                     <i class="fa fa-star" aria-hidden="true"></i>
                                     <i class="fa fa-star" aria-hidden="true"></i>
                                     <i class="fa fa-star" aria-hidden="true"></i>
-                                    <a href="room.html#room-reviews">5.00 Based on 3 Ratings</a>
+                                    <a href="/room/#room-reviews">5.00 Based on 3 Ratings</a>
                                 </span>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus animi quod
                                     adipisci quia? Laudantium quibusdam, mollitia nisi quasi perspiciatis omnis...</p>
@@ -435,7 +434,7 @@
                         <div class="col-lg-2">
                             <div class="room-price">
                                 <span class="price">€39 / night</span>
-                                <a href="booking-form.html" class="btn btn-sm">BOOK NOW</a>
+                                <a href="/checkout/" class="btn btn-sm">BOOK NOW</a>
                             </div>
                         </div>
                     </div>

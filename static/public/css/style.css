@@ -4868,7 +4868,8 @@ blockquote:after{
 }
 .page-title{
     background-repeat:no-repeat;
-    background-size:cover
+    background-size:cover;
+    background: url(../images/breadcrumb.jpg);
 }
 .page-title .inner{
     position:relative;
