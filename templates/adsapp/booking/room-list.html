@@ -1,0 +1,19 @@
+<h1>Room Lists</h1>
+Check In: {{ checkin }} </br>
+Check Out: {{ checkout }} </br>
+
+{% if room_list %}
+
+{% for i in room_list %}
+    <a href="/room/{{ i.id }}/checkin={{ checkin }}&checkout={{ checkin }}"><h4>Room: {{i.room}}</h4></a>
+    Type: {{i.types}}</br>
+    Description: {{i.description}}</br>
+    Bed: {{i.bed}}</br>
+    Bed Quantity: {{i.bed_quantity}}</br>
+    Category: {{i.category}}</br>
+    Price: {{i.price}}</br></br>
+{% endfor %}
+
+{% else %}
+  <p>No Room Available</p>
+{% endif %}
