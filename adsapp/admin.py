@@ -14,4 +14,5 @@ admin.site.register(Amenities)
 admin.site.register(Room_Amenities)
 admin.site.register(Room_Gallery)
 admin.site.register(Booking)
+admin.site.register(Inquiry)
 

@@ -23,6 +23,17 @@ class Customer(models.Model):
     def __str__(self):
         return str(self.firstname + ' ' + self.lastname)
 
+class Inquiry(models.Model):
+    name = models.CharField(max_length=50)
+    email = models.EmailField(max_length=70)
+    number = models.CharField(max_length=80)
+    subject = models.CharField(max_length=100)
+    message = models.CharField(max_length=1000)
+    created = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return str(self.name)
+
 class Room(models.Model):
     room = models.CharField(max_length=50)
     types = models.CharField(max_length=50)
@@ -31,23 +42,25 @@ class Room(models.Model):
     bed_quantity = models.CharField(max_length=50)
     category = models.CharField(max_length=50)
     price = models.IntegerField()
+    thumbnail = models.CharField(max_length=250)
 
     def __str__(self):
         return str(self.room + " - " + self.types + " - " + self.category)
 
 class Amenities(models.Model):
-    name = models.CharField(max_length=50)
+    types = models.CharField(max_length=50)
+    description = models.CharField(max_length=50)
     icon = models.CharField(max_length=50)
 
     def __str__(self):
-        return str(self.name + " (" + self.icon + ")")
+        return str(self.description + " (" + self.icon + ")")
 
 class Room_Amenities(models.Model):
     room = models.ForeignKey(Room)
     amenities = models.ForeignKey(Amenities)
 
     def __str__(self):
-        return str(self.room.room + " | " + self.amenities.name + "")
+        return str(self.room.room + " | " + self.amenities.description + "")
 
 class Room_Gallery(models.Model):
     room = models.ForeignKey(Room)
@@ -55,7 +68,6 @@ class Room_Gallery(models.Model):
 
     def __str__(self):
         return str(self.room)
-
 
 class Booking(models.Model):
     customer = models.ForeignKey(Customer)

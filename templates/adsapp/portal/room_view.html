@@ -73,7 +73,7 @@
                           <select class="form-control select2" id="groups" multiple="multiple" data-placeholder="Select Amenities" name="amenities[]" style="width: 100%;">
                             {% if amenities_list %}
                             {% for i in amenities_list %}
-                                <option value="{{ i.id }}">{{ i.name }}</option>
+                                <option value="{{ i.id }}">{{ i.description }}</option>
                             {% endfor %}
                             {% else %}
                                 <p>No Data</p>
@@ -85,7 +85,12 @@
                           <label></br>Descrption:</label>
                           <textarea class="form-control" rows="5" name="message" placeholder="Enter Message ..." >{{ RoomDetails.description }}</textarea>
                         </div>
-        
+
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Thumbnail</label>
+                            <input type="text" class="form-control" name="room" id="InputName" placeholder="" maxlength="20" value="{{ RoomDetails.thumbnail }}">
+                          </div>  
+                        
                       </div> <!--Div Box-Body-->
 
                       <div class="box-footer">

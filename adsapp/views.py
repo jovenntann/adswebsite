@@ -23,6 +23,12 @@ from adsapp.forms import *
 from channels.layers import get_channel_layer
 from asgiref.sync import async_to_sync
 
+# Telegram Notification
+import telebot
+API_TOKEN = '806654376:AAEOg-ifaJ_XhYKdxJirkTBd23e7ic0TYSQ'
+bot = telebot.TeleBot(API_TOKEN)
+cid = '-341823738'
+
 def SocketSend(group,type_,event,text):
     channel_layer = get_channel_layer()
     async_to_sync(channel_layer.group_send)(
@@ -72,17 +78,14 @@ def ContactUs(request):
   return render(request, "adsapp/contact.html",context=context)
 
 def RoomList(request):
-  context = {
-      'activate':'',
-  }
-  return render(request, "adsapp/rooms-list.html",context=context)
-
-def ProductionRoomList(request):
   room_list = Room.objects.all()
+  room_amenities = Room_Amenities.objects.all()
   context = {
-      'room_list':room_list,
+    'room_list':room_list,
+    'room_amenities':room_amenities,
+    'activate':'',
   }
-  return render(request, "adsapp/room-list.html",context=context)
+  return render(request, "adsapp/rooms-list-demo.html",context=context)
 
 def RoomListSearch(request,checkin,checkout):
   room_list = Room.objects.all()
@@ -91,7 +94,7 @@ def RoomListSearch(request,checkin,checkout):
       'checkin':checkin,
       'checkout':checkout,
   }
-  return render(request, "adsapp/room-list.html",context=context)
+  return render(request, "adsapp/rooms-list-demo.html",context=context)
 
 
 def ProductionRoomView(request,room_id,checkin,checkout):
@@ -130,11 +133,23 @@ def Gallery(request):
       'activate':'gallery',
   }
   return render(request, "adsapp/gallery.html",context=context)
+  
+def InquirySubmit(request):
+        
+    name = request.POST['name']
+    email = request.POST['email']
+    number = request.POST['number']
+    subject = request.POST['subject']
+    message = request.POST['message']
 
+    Inquiry(name=name,email=email,number=number,subject=subject,message=message).save()
+
+    bot.send_message(cid, f"Name: {name}\nEmail: {email}\nNumber: {number}\nSubject: {subject}\nMessage: {message}")
+
+    return HttpResponseRedirect('/')
 
 
 # PORTAL ########################################################################
-
 def Login(request):
       
     if request.method == "POST":

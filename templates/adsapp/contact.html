@@ -28,7 +28,7 @@
                             assumenda corrupti autem iste eveniet eaque vitae beatae tenetur, voluptatem eius. Numquam.
                         </p>
 
-                        <form id="contact-form" class="contact-form">
+                        <form id="inquiry-form" class="contact-form" method="post" action="/inquiry/submit/" enctype="multipart/form-data"> {% csrf_token %}
                             <div class="form-group">
                                 <input class="form-control" name="name" placeholder="Name" type="text">
                             </div>
@@ -36,7 +36,7 @@
                                 <input class="form-control" name="email" placeholder="Email" type="email">
                             </div>
                             <div class="form-group">
-                                <input class="form-control" name="phone" placeholder="Phone" type="text">
+                                <input class="form-control" name="number" placeholder="Phone" type="text">
                             </div>
                             <div class="form-group">
                                 <input class="form-control" name="subject" placeholder="Subject" type="text">

@@ -12,6 +12,8 @@ urlpatterns = [
     url(r'^gallery/$',views.Gallery,name='gallery'),
     url(r'^room-list/$',views.RoomList,name='room-list'),
     url(r'^room/$',views.RoomView,name='room-view'),
+    # PUBLIC FORM
+    url(r'^inquiry/submit/$',views.InquirySubmit,name='inquiry_submit'),
 
     url(r'^room-list/checkin=(?P<checkin>\d{4}-\d{2}-\d{2})&checkout=(?P<checkout>\d{4}-\d{2}-\d{2})/$',views.RoomListSearch,name='room-list-search'), # Live
     url(r'^room/(?P<room_id>.*)/checkin=(?P<checkin>\d{4}-\d{2}-\d{2})&checkout=(?P<checkout>\d{4}-\d{2}-\d{2})/$', views.RoomView,name='room-view'), # Live
