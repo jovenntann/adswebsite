@@ -68,40 +68,55 @@ def PaypalCancel(request):
 # PUBLIC ########################################################################
 
 def index(request):
-  SocketSend("portal","user.notification","RoomNotification","10")
-  return render(request, "adsapp/index.html")
+  
+  # SocketSend("portal","user.notification","RoomNotification","10")
+  
+  settings = Setting.objects.all()
+  context = {
+      'activate':'index',
+      'settings':settings,
+  }
+  return render(request, "adsapp/index.html",context=context)
   
 def ContactUs(request):
+  settings = Setting.objects.all()
   context = {
+      'settings':settings,
       'activate':'contact-us',
   }
   return render(request, "adsapp/contact.html",context=context)
 
 def RoomList(request):
+  settings = Setting.objects.all()
   room_list = Room.objects.all()
   room_amenities = Room_Amenities.objects.all()
   context = {
+    'settings':settings,
     'room_list':room_list,
     'room_amenities':room_amenities,
     'activate':'',
   }
-  return render(request, "adsapp/rooms-list-demo.html",context=context)
+  return render(request, "adsapp/rooms-list.html",context=context)
 
 def RoomListSearch(request,checkin,checkout):
+  settings = Setting.objects.all()
   room_list = Room.objects.all()
   context = {
+      'settings':settings,
       'room_list':room_list,
       'checkin':checkin,
       'checkout':checkout,
   }
-  return render(request, "adsapp/rooms-list-demo.html",context=context)
+  return render(request, "adsapp/rooms-list.html",context=context)
 
 
 def ProductionRoomView(request,room_id,checkin,checkout):
+  settings = Setting.objects.all()
   room = Room.objects.get(id=str(room_id))
   ammenities_list = Room_Amenities.objects.filter(room=str(room_id))
   gallery_list = Room_Gallery.objects.filter(room=str(room_id))
   context = {
+    'settings':settings,
     'room':room,
     'checkin':checkin,
     'checkout':checkout,
@@ -111,25 +126,33 @@ def ProductionRoomView(request,room_id,checkin,checkout):
   return render(request, "adsapp/room.html",context=context)
 
 def RoomView(request):
+  settings = Setting.objects.all()
   context = {
+      'settings':settings,
       'activate':'',
   }
   return render(request, "adsapp/room.html",context=context)
 
 def CheckOut(request):
+  settings = Setting.objects.all()
   context = {
+      'settings':settings,
       'activate':'',
   }
   return render(request, "adsapp/booking-form.html",context=context)
 
 def AboutUs(request):
+  settings = Setting.objects.all()
   context = {
+      'settings':settings,
       'activate':'about-us',
   }
   return render(request, "adsapp/about-us.html",context=context)
 
 def Gallery(request):
+  settings = Setting.objects.all()
   context = {
+      'settings':settings,
       'activate':'gallery',
   }
   return render(request, "adsapp/gallery.html",context=context)
@@ -144,7 +167,7 @@ def InquirySubmit(request):
 
     Inquiry(name=name,email=email,number=number,subject=subject,message=message).save()
 
-    bot.send_message(cid, f"Name: {name}\nEmail: {email}\nNumber: {number}\nSubject: {subject}\nMessage: {message}")
+    bot.send_message(cid, f"✉️ Customer Inquiry\n\nName: {name}\nEmail: {email}\nNumber: {number}\nSubject: {subject}\nMessage: {message}")
 
     return HttpResponseRedirect('/')
 

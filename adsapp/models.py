@@ -82,3 +82,11 @@ class Booking(models.Model):
 
     def __str__(self):
         return str(self.customer.firstname + self.customer.lastname)
+
+
+class Setting(models.Model):
+    field = models.CharField(max_length=50)
+    value = models.CharField(max_length=200)
+
+    def __str__(self):
+        return str(self.field)
