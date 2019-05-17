@@ -159,15 +159,16 @@ def Gallery(request):
   
 def InquirySubmit(request):
         
-    name = request.POST['name']
+    firstname = request.POST['firstname']
+    lastname = request.POST['lastname']
     email = request.POST['email']
     number = request.POST['number']
     subject = request.POST['subject']
     message = request.POST['message']
 
-    Inquiry(name=name,email=email,number=number,subject=subject,message=message).save()
+    Inquiry(firstname=firstname,lastname=lastname,email=email,number=number,subject=subject,message=message).save()
 
-    bot.send_message(cid, f"✉️ Customer Inquiry\n\nName: {name}\nEmail: {email}\nNumber: {number}\nSubject: {subject}\nMessage: {message}")
+    bot.send_message(cid, f"✉️ Customer Inquiry\n\nFirst Name: {firstname}\nLast Name: {lastname}\nEmail: {email}\nNumber: {number}\nSubject: {subject}\nMessage: {message}")
 
     return HttpResponseRedirect('/')
 

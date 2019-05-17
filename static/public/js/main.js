@@ -302,9 +302,27 @@
       $(".plus, .minus").on("click", function() {
         var button = $(this);
         var oldValue = button.parent().find("input").val();
-        if (button.hasClass('plus')) {
-          var newVal = parseFloat(oldValue) + 1;
-        } else {
+        if (button.hasClass('booking-adults-plus')) {
+          if (oldValue >= 40){
+            $('.booking-adults-plus').addClass('disable');
+            var newVal = parseFloat(oldValue);
+          }
+          else {
+            var newVal = parseFloat(oldValue) + 1;
+          }
+          
+        }
+        else if (button.hasClass('booking-children-plus')) {
+          if (oldValue >= 50){
+            $('.booking-children-plus').addClass('disable');
+            var newVal = parseFloat(oldValue);
+          }
+          else {
+            var newVal = parseFloat(oldValue) + 1;
+          }
+          
+        }
+        else {
           if (oldValue > 0) {
             var newVal = parseFloat(oldValue) - 1;
           } else {
@@ -1548,10 +1566,10 @@
           items: 1
         },
         768: {
-          items: 2
+          items: 1
         },
         992: {
-          items: 3
+          items: 1
         }
       }
     });
@@ -1953,8 +1971,8 @@
     if ($("#instafeed-gallery").length) {
       var galleryFeed = new Instafeed({
         get: "user",
-        userId: 6954412019,
-        accessToken: "6954412019.1677ed0.7a363e167d20449998757a3381ca9987",
+        userId: 13622825827,
+        accessToken: "13622825827.a64e0c0.a0542ffc980b4438968e0a52840570a7",
         resolution: "standard_resolution",
         useHttp: "true",
         template: '<figure class="gradient-overlay-hover instagram-icon"><a href="{{link}}" target="_blank"><img src="{{image}}" class="img-responsive"></a></figure>',

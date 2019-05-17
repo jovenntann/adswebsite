@@ -29,20 +29,29 @@
                         </p>
 
                         <form id="inquiry-form" class="contact-form" method="post" action="/inquiry/submit/" enctype="multipart/form-data"> {% csrf_token %}
-                            <div class="form-group">
-                                <input class="form-control" name="name" placeholder="Name" type="text">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input class="form-control" name="firstname" placeholder="First Name" type="text" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input class="form-control" name="lastname" placeholder="Last Name" type="text" required>
+                                    </div>
+                                </div>
                             </div>
                             <div class="form-group">
-                                <input class="form-control" name="email" placeholder="Email" type="email">
+                                <input class="form-control" name="email" placeholder="Email" type="email" required>
                             </div>
                             <div class="form-group">
-                                <input class="form-control" name="number" placeholder="Phone" type="text">
+                                <input class="form-control" type="tel" id="phone" name="number" placeholder="Phone" required>
                             </div>
                             <div class="form-group">
-                                <input class="form-control" name="subject" placeholder="Subject" type="text">
+                                <input class="form-control" name="subject" placeholder="Subject" type="text" required>
                             </div>
                             <div class="form-group">
-                                <textarea class="form-control" name="message" placeholder="Message"></textarea>
+                                <textarea class="form-control" name="message" placeholder="Message"></textarea required>
                             </div>
                             <div class="form-group">
                                 <button class="btn mt30">SEND YOUR MESSAGE</button>
