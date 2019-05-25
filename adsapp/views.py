@@ -162,7 +162,7 @@ def InquirySubmit(request):
     firstname = request.POST['firstname']
     lastname = request.POST['lastname']
     email = request.POST['email']
-    number = request.POST['number']
+    number = request.POST['full_phone']
     subject = request.POST['subject']
     message = request.POST['message']
 
