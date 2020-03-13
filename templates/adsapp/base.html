@@ -30,6 +30,7 @@
 
     <link rel="stylesheet" href="{% static "/public/fonts/font-awesome.min.css" %}">
     <link rel="stylesheet" href="{% static "/public/fonts/flaticon.css" %}">
+    <link rel="stylesheet" href="{% static "/public/fonts/flaticon/flaticon.css" %}">
     <link rel="stylesheet" href="{% static "/public/intl-tel-input-master/css/intlTelInput.css" %}">
     
     <link href="https://fonts.googleapis.com/css?family=Oswald:400,500,600,700%7CRoboto:100,300,400,400i,500,700" rel="stylesheet">
@@ -69,11 +70,17 @@
                         <li class="menu-item {% if activate == 'about-us' %}active{% endif %}">
                             <a href="/about-us/">ABOUT US</a>
                         </li>
-                        <li class="menu-item {% if activate == 'gallery' %}active{% endif %}">
+                        <!-- <li class="menu-item {% if activate == 'gallery' %}active{% endif %}">
                             <a href="/gallery/">GALLERY</a>
+                        </li> -->
+                        <li class="menu-item {% if activate == 'additional-services' %}active{% endif %}">
+                            <a href="/additional-services/">ADDITIONAL SERVICES</a>
                         </li>
                         <li class="menu-item {% if activate == 'contact-us' %}active{% endif %}">
                             <a href="/contact-us/">CONTACT US</a>
+                        </li>
+                        <li class="menu-item {% if activate == 'how-to-get-here' %}active{% endif %}">
+                            <a href="/how-to-get-here/">HOW TO GET HERE</a>
                         </li>
                         <li class="menu-item menu-btn">
                             <a href="/room-list/" class="btn">
@@ -254,7 +261,7 @@
           </script>
 
     <script src="{% static "/public/js/jquery.min.js" %}" type="2bff4339832c18b1cecf62b7-text/javascript"></script>
-    <script src="https://maps.google.com/maps/api/js?key=AIzaSyBjtXU1JtLBVn8-AA9ThYXvSl-ylfn5vEU"
+    <script src="https://maps.google.com/maps/api/js?key=AIzaSyDJ-qGS8SiTAP9OtdCfhUyw2nVKQyOI0qg"
         type="2bff4339832c18b1cecf62b7-text/javascript"></script>
     <script src="{% static "/public/js/bootstrap.min.js" %}" type="2bff4339832c18b1cecf62b7-text/javascript"></script>
     <script src="{% static "/public/js/bootstrap-select.min.js" %}" type="2bff4339832c18b1cecf62b7-text/javascript"></script>

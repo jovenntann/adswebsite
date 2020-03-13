@@ -86,6 +86,23 @@ def ContactUs(request):
   }
   return render(request, "adsapp/contact.html",context=context)
 
+def AdditionalServices(request):
+  settings = Setting.objects.all()
+  context = {
+      'settings':settings,
+      'activate':'additional-services',
+  }
+  return render(request, "adsapp/additional-services.html",context=context)
+
+def HowToGetHere(request):
+  settings = Setting.objects.all()
+  context = {
+      'settings':settings,
+      'activate':'how-to-get-here',
+  }
+  return render(request, "adsapp/how-to-get-here.html",context=context)
+
+
 def RoomList(request):
   settings = Setting.objects.all()
   room_list = Room.objects.all()

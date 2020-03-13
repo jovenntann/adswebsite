@@ -7,11 +7,15 @@ urlpatterns = [
     # PUBLIC
     url(r'^$',views.index,name='index'),
     url(r'^contact-us/$',views.ContactUs,name='contact-us'),
+    url(r'^additional-services/$',views.AdditionalServices,name='additional-services'),
+    url(r'^how-to-get-here/$',views.HowToGetHere,name='how-to-get-here'),
     url(r'^checkout/$',views.CheckOut,name='checkout'),
     url(r'^about-us/$',views.AboutUs,name='about-us'),
     url(r'^gallery/$',views.Gallery,name='gallery'),
     url(r'^room-list/$',views.RoomList,name='room-list'),
     url(r'^room/$',views.RoomView,name='room-view'),
+
+
     # PUBLIC FORM
     url(r'^inquiry/submit/$',views.InquirySubmit,name='inquiry_submit'),
 

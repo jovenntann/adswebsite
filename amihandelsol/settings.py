@@ -29,7 +29,7 @@ SECRET_KEY = '&ls15hz51x$&xqt^ic%c%2$551$#j2xb-z6fbv8v+t@rz(*898'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-# ALLOWED_HOSTS = ['127.0.0.1','139.180.128.44','vps.amihandelsol.com','ads.serv']
+# ALLOWED_HOSTS = ['127.0.0.1','45.32.121.173','vps.amihandelsol.com']
 # Channels
 ALLOWED_HOSTS = ['*']
 
